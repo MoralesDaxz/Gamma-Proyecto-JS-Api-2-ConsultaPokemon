@@ -3,8 +3,34 @@ let count = 0;
 let divContent1 = document.createElement("div");
 let divContent3 = document.createElement("div");
 
-//div1
+
+//divContent1
+let divImgContent1= document.createElement("div");
+//divContent2
 let divContent2 = document.createElement("div");
+//divContent3
+let divContent3Card=document.createElement("div");
+let art1Content3 = document.createElement('article')
+let art2Content3 = document.createElement('article')
+let art3Content3 = document.createElement('article')
+let art4Content3 = document.createElement('article')
+let art5Content3 = document.createElement('article')
+let art6Content3 = document.createElement('article')
+let statHp= document.createElement('h4')
+let statAtk= document.createElement('h4')
+let statDef= document.createElement('h4')
+let statAtkEsp= document.createElement('h4')
+let statDefEsp= document.createElement('h4')
+let statVel= document.createElement('h4')
+let pHp=document.createElement('p')
+let pAtk=document.createElement('p')
+let pDef=document.createElement('p')
+let pAtkEsp=document.createElement('p')
+let pDefEsp=document.createElement('p')
+let pVel=document.createElement('p')
+
+
+//div1
 let div1 = document.createElement("div");
 let div1Btns = document.createElement("div");
 let div2 = document.createElement("div");
@@ -46,7 +72,6 @@ let hList = document.createElement("h4");
 let divList = document.createElement("div");
 let ul1 = document.createElement("ul");
 //div4
-
 let div4 = document.createElement("div");
 let art1Div4 = document.createElement("article");
 let art2Div4 = document.createElement("article");
@@ -56,7 +81,6 @@ let sec1Art2Div4 = document.createElement("section");
 let sec2Art2Div4 = document.createElement("section");
 let hMove = document.createElement("h4");
 let hItems = document.createElement("h4");
-
 //div5
 let div5 = document.createElement("div");
 let art1Div5 = document.createElement("article");
@@ -64,19 +88,41 @@ let art2Div5 = document.createElement("article");
 let sec1Art1Div5 = document.createElement("section");
 let sec1Art2Div5 = document.createElement("section");
 let hEncuentro = document.createElement("h4");
-
 //div6
 let div6 = document.createElement("div");
 
 body.appendChild(divContent1);
 body.appendChild(divContent2);
 body.appendChild(divContent3);
+
+divContent1.appendChild(divImgContent1)
+
 divContent2.appendChild(div1);
 divContent2.appendChild(div2);
 divContent2.appendChild(div3);
 divContent2.appendChild(div4);
 divContent2.appendChild(div5);
 divContent2.appendChild(div6);
+
+divContent3.appendChild(divContent3Card)
+divContent3Card.appendChild(art1Content3)
+divContent3Card.appendChild(art2Content3)
+divContent3Card.appendChild(art3Content3)
+divContent3Card.appendChild(art4Content3)
+divContent3Card.appendChild(art5Content3)
+divContent3Card.appendChild(art6Content3)
+art1Content3.appendChild(statHp)
+art1Content3.appendChild(pHp)
+art2Content3.appendChild(statAtk)
+art2Content3.appendChild(pAtk)
+art3Content3.appendChild(statDef)
+art3Content3.appendChild(pDef)
+art4Content3.appendChild(statAtkEsp)
+art4Content3.appendChild(pAtkEsp)
+art5Content3.appendChild(statDefEsp)
+art5Content3.appendChild(pDefEsp)
+art6Content3.appendChild(statVel)
+art6Content3.appendChild(pVel)
 
 div1.appendChild(ha);
 div1.appendChild(form);
@@ -131,9 +177,31 @@ art1Div5.appendChild(sec1Art1Div5);
 art2Div5.appendChild(sec1Art2Div5);
 sec1Art1Div5.appendChild(hEncuentro);
 
-body.style = `min-width: 1200px;background-color:black;display:flex; justify-content:center;align-items:center`;
-divContent1.style = `width:35%;display:flex;flex-wrap:wrap; gap1%;`;
-divContent2.style = `gap:1%;width:30%;height:530px;display:flex;flex-direction:column;align-items:center;justify-content:center;background-color: #718787`;
+body.style = `min-width: 1000px;min-height:900px;background-color:black;display:flex; justify-content:center;align-items:start`;
+divContent1.style = `width:30%;height:800px;display:flex;flex-direction:column;align-items:center;justify-content:start;background-color:gray`;
+
+divImgContent1.style = `width:100%;display:flex;flex-wrap:wrap-reverse;justify-content:center;gap:1%`
+divContent2.style = `gap:1%;width:30%;height:800px;display:flex;flex-direction:column;align-items:center;justify-content:start;background-color: #718787`;
+divContent3.style=`width:35%;height:800px;display:flex;flex-direction:column;align-items:center;justify-content:start;background-color:gray`
+divContent3Card.style=`display:flex;flex-direction:column;justify-content:center;width:60%;height:180px;border: solid 3px #0062ff; border-radius:3px;`
+art1Content3.style=`width:100%;display:flex;flex-direction:row;justify-content:start; align-items:baseline;gap:5%;`
+art2Content3.style=`width:100%;display:flex;flex-direction:row;justify-content:start; align-items:baseline;gap:5%;`
+art3Content3.style=`width:100%;display:flex;flex-direction:row;justify-content:start; align-items:baseline;gap:5%;`
+art4Content3.style=`width:100%;display:flex;flex-direction:row;justify-content:start; align-items:baseline;gap:5%;`
+art5Content3.style=`width:100%;display:flex;flex-direction:row;justify-content:start; align-items:baseline;gap:5%;`
+art6Content3.style=`width:100%;display:flex;flex-direction:row;justify-content:start; align-items:baseline;gap:5%;`
+statHp.style=`margin:0`
+statAtk.style=`margin:0`
+statDef.style=`margin:0`
+statAtkEsp.style=`margin:0`
+statDefEsp.style=`margin:0`
+statVel.style=`margin:0`
+pHp.style=`margin:0`
+pAtk.style=`margin:0`
+pDef.style=`margin:0`
+pAtkEsp.style=`margin:0`
+pDefEsp.style=`margin:0`
+pVel.style=`margin:0`
 div1.style = `;width:100%;height:130px;display:flex; flex-direction:column; background-color:#cfd4d4;align-items:center; gap:5px`;
 div1Btns.style = `display:flex;flex-direction:row;justify-content:space-around;width:90%`;
 div2.style = `width:100%;display:flex; flex-direction:row;height:auto;background-color:white;`; //`display:none`;
@@ -180,6 +248,12 @@ art1Div5.style = `width:50%`;
 art2Div5.style = `width:50%`;
 sec1Art2Div5.style = `height:62px;overflow-y:scroll;`;
 
+statHp.innerText=`Hp: `
+statAtk.innerText=`Ataque:`
+statDef.innerText=`Defensa:`
+statAtkEsp.innerText=`Ataque Esp.:`
+statDefEsp.innerText=`Def Esp.:`
+statVel.innerText=`Velocidad:`
 ha.innerText = `Consulta PoKéMon`;
 btn1.innerText = `Consultar`;
 btn2.innerText = `Clear`;
@@ -196,7 +270,9 @@ async function getPokemons(a) {
   let resultPromise = await promiseA.json();
   let pokId = await resultPromise.id;
   let pokList = await resultPromise.game_indices;
-  //console.log(`${resultPromise.name}`, resultPromise);
+  console.log(`${promiseA}`);
+
+  console.log(`${resultPromise.name}`, resultPromise);
 
   //------------------- buscamos Imagen del pokemon front-default - por 'id' dado en primeras lineas getPokemons(a)
   let promiseB = await fetch(`https://pokeapi.co/api/v2/pokemon-form/${pokId}`);
@@ -285,36 +361,43 @@ async function getPokemons(a) {
     });
   };
   const getPictures = async () => {
-
+count=0
     let promiseG = await resultPromise.sprites;
 
     for (const key in promiseG) {
       
       let d = document.createElement("div");
+      
+      if (promiseG[key] !== null) { //&& count <5count para captar hasta cierto limite
+        count++
+          let sprites = await fetch(promiseG[key]);
+        d.style = `width:9rem;height:9rem;background-image: url('${sprites.url}');background-position:center;background-size:cover`;
+        
+          divImgContent1.append(d);
+       
+        
 
-      if (promiseG[key] !== null) {
-        let sprites = await fetch(promiseG[key]);
-        d.style = `width:50px;height:50px;background-image: url('${sprites.url}');background-position:center;background-size:cover`;
-        divContent1.appendChild(d);
       }
+      
     }
   };
-  /*  if (i!=null) {
-       let d=document.createElement('div')
-        d.style=`width:50px;height:50px;background-image: url('${i}');background-position:center`
-        return divContent1.appendChild(d)
+const getStats = async ()=>{
+  let promiseH = await resultPromise.stats
+ let hp  = await promiseH[0].base_stat
+ let atk = await promiseH[1].base_stat
+  let def= await promiseH[2].base_stat
+  let atkEsp= await promiseH[3].base_stat
+  let defEsp= await promiseH[4].base_stat
+  let vel= await promiseH[5].base_stat
+  pHp.innerText=`${hp}`
+  pAtk.innerText=`${atk}`
+  pDef.innerText=`${def}`
+  pAtkEsp.innerText=`${atkEsp}`
+  pDefEsp.innerText=`${defEsp}`
+  pVel.innerText=`${vel}`
 
-      } */
-  /*    
-    Galeria de TODAS sus imagenes, exceptuando las imagenes dentro del objeto versions en sprites
-    
-    Una Card de Stats que va a tener las siguientes características:
-    HP
-    Ataque
-    Defensa
-    Ataque especial
-    Defensa especial
-    Velocidad */
+}
+
 
   printDetails();
   getType();
@@ -323,10 +406,14 @@ async function getPokemons(a) {
   getItems();
   getAreas();
   getPictures();
+  getStats()
+
   return resultPromise;
 } //END --> getPokemons
 
 btn1.addEventListener("click", () => {
+  
+  //input.value.toLowerCase()
   btn1.disabled = true;
   //div2.style=``
   //div3.style=``

@@ -40,5 +40,6 @@ content: none;
 table {
 border-collapse: collapse;
 border-spacing: 0;
-
+flex-wrap: wrap-reverse;
+flex-direction:column-reverse;
 }
