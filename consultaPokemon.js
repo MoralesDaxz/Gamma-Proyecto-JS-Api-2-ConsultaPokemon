@@ -15,6 +15,7 @@ let divImgContent1 = document.createElement("div");
 //divContent2
 let divContent2 = document.createElement("div");
 //divContent3
+let hEstadisticas = document.createElement('h3')
 let divContent3Card = document.createElement("div");
 let art1Content3 = document.createElement("article");
 let art2Content3 = document.createElement("article");
@@ -111,6 +112,7 @@ divContent2.appendChild(div4);
 divContent2.appendChild(div5);
 divContent2.appendChild(div6);
 
+divContent3.appendChild(hEstadisticas);
 divContent3.appendChild(divContent3Card);
 divContent3Card.appendChild(art1Content3);
 divContent3Card.appendChild(art2Content3);
@@ -184,7 +186,7 @@ art1Div5.appendChild(sec1Art1Div5);
 art2Div5.appendChild(sec1Art2Div5);
 sec1Art1Div5.appendChild(hEncuentro);
 
-body.style = `padding-top:1%;max-width: 1300px;height:100vh;background-image:url('poke-body-3.jpg');background-size:cover;background-repeat:no-repeat;background-position: center;display:flex; flex-direction:column ;align-items:center;justify-content:start`;
+body.style = `padding-top:1%;max-width: 1300px;height:100vh;background-image:url('img/poke-body-3.jpg');background-size:cover;background-repeat:no-repeat;background-position: center;display:flex; flex-direction:column ;align-items:center;justify-content:start`;
 section1.style=`gap:5%;;width:800px;height:100vh;display:flex; flex-direction:row ;align-items:center;justify-content:center;gap;3%`
 section2.style=`margin-top:5%;margin-bottom:10px;width:50%:height:200vh;display:flex; flex-direction:row ;align-items:center;justify-content:center`
 divContent1.style=`display:none`
@@ -193,18 +195,18 @@ divContent2.style = `gap:1%;width:60%;height:100%;display:flex;flex-direction:co
 divContent3.style=`display:none`
 div1.style = `width:350px;height:180px;display:flex; flex-direction:column; background-color:rgba(231,207,106,0.5);justify-content:center;align-items:center; gap:5px;border:solid 2px turquoise;border-radius:3px`;
 div1Btns.style = `display:flex;flex-direction:row;justify-content:space-around;width:90%`;
-ha.style=`width:100%;height:65px;background-image:url('titulo.png');background-size:80%;background-position:center;background-repeat:no-repeat`
+ha.style=`width:100%;height:65px;background-image:url('img/titulo.png');background-size:80%;background-position:center;background-repeat:no-repeat`
 input.style=`font-weight:800;margin:0;background:transparent;border-color: turquoise; border-radius:3px;text-align:center;outline-color:rgb(236,217,136);height:25px`
 
 divImgContent1.style = `width:100%;display:flex;flex-wrap:wrap-reverse;justify-content:center;gap:1%`;
 
-divContent3Card.style = `display:flex;flex-direction:column;justify-content:center;width:60%;height:180px;border: solid 3px #0062ff; border-radius:3px;`;
-art1Content3.style = `width:100%;display:flex;flex-direction:row;justify-content:start; align-items:baseline;gap:5%;`;
-art2Content3.style = `width:100%;display:flex;flex-direction:row;justify-content:start; align-items:baseline;gap:5%;`;
-art3Content3.style = `width:100%;display:flex;flex-direction:row;justify-content:start; align-items:baseline;gap:5%;`;
-art4Content3.style = `width:100%;display:flex;flex-direction:row;justify-content:start; align-items:baseline;gap:5%;`;
-art5Content3.style = `width:100%;display:flex;flex-direction:row;justify-content:start; align-items:baseline;gap:5%;`;
-art6Content3.style = `width:100%;display:flex;flex-direction:row;justify-content:start; align-items:baseline;gap:5%;`;
+divContent3Card.style = `gap:5%;font-size:20px;color:white;display:flex;flex-direction:column;justify-content:center;width:60%;height:120px;`;//border-radius:3px;background-image: url('marco3.png'); background-repeat:no-repeat;background-size:cover;background-position:center;
+art1Content3.style = `width:100%;display:flex;flex-direction:row;justify-content:space-between; align-items:baseline;gap:5%;`;
+art2Content3.style = `width:100%;display:flex;flex-direction:row;justify-content:space-between; align-items:baseline;gap:5%;`;
+art3Content3.style = `width:100%;display:flex;flex-direction:row;justify-content:space-between; align-items:baseline;gap:5%;`;
+art4Content3.style = `width:100%;display:flex;flex-direction:row;justify-content:space-between; align-items:baseline;gap:5%;`;
+art5Content3.style = `width:100%;display:flex;flex-direction:row;justify-content:space-between; align-items:baseline;gap:5%;`;
+art6Content3.style = `width:100%;display:flex;flex-direction:row;justify-content:space-between; align-items:baseline;gap:5%;`;
 statHp.style = `font-weight:800;margin:0`;
 statAtk.style = `font-weight:800;margin:0`;
 statDef.style = `font-weight:800;margin:0`;
@@ -236,6 +238,7 @@ pAlt.style = `height:20px;margin:0;font-size:16px; text-transform:capitalize`;
 pPeso.style = `height:20px;margin:0;font-size:16px; text-transform:capitalize`;
 
 div3.style=`display:none`
+hEstadisticas.style=`width:50%;color:white;text-align:center; font-weight:900;font-size:30px`
 div3Sec1.style = `display:flex;flex-direction:row; justify-content:space-around`;
 div3Sec2.style = `display:flex;flex-direction:row; justify-content:space-around`;
 hType1.style = `font-weight:800;text-align:center;margin:1% auto`;
@@ -262,6 +265,7 @@ art2Div5.style = `width:70%`;
 sec1Art2Div5.style = `height:62px;overflow-y:scroll;`;
 hEncuentro.style = `margin-left:1%;width:150px;font-weight:800;text-align:center`;
 
+
 statHp.innerText = `Hp:`;
 statAtk.innerText = `Ataque:`;
 statDef.innerText = `Defensa:`;
@@ -277,6 +281,8 @@ hMove.innerText = `Movimientos`;
 hItems.innerText = `Items`;
 hEncuentro.innerText = `Areas de encuentro`;
 input.setAttribute("type", "text");
+
+
 
 //------------------- Data por nombre -> dado en input.value al llamar funcion -> getPokemons(a)
 async function getPokemons(a) {
@@ -314,6 +320,7 @@ console.log(resultPromise.sprites.other.dream_world.front_default);
     pAlt.innerText = ` ${altura}`;
     pPeso.innerText = `${peso}`;
     divImg.style = `width:50%;height:100px;background-image: url('${pokImg}');background-size:50%;background-repeat:no-repeat;background-position: center;`;
+    hEstadisticas.innerText=`Estadisticas de ${pName.innerText}`//Content div 3 H3
   }
 
   async function getListGames() {
@@ -324,7 +331,7 @@ console.log(resultPromise.sprites.other.dream_world.front_default);
       li.innerText = `${res}`;
       li.style = `text-transform:capitalize;margin:0;font-size:14px;font-weight:bold`;
       divList.style = `width:100%;height:68px;overflow-y:scroll;`;
-      //console.log(`Juego ${element.version.name} Url:${element.version.url}`);
+  
       return ul1;
     });
   }
@@ -358,7 +365,7 @@ console.log(resultPromise.sprites.other.dream_world.front_default);
       count++;
       let h = document.createElement("h5");
       h.innerText = `${count} - ${i.item.name}`;
-      h.style = `text-transform: capitalize;margin:0px;;margin-left:2%`;
+      h.style = `text-transform: capitalize;margin:0px;margin-left:2%`;
       sec2Art2Div4.appendChild(h);
     });
   };
@@ -384,14 +391,14 @@ console.log(resultPromise.sprites.other.dream_world.front_default);
       if (promiseG[key] !== null) {
         if (key !== "other" && key !== "versions") {
           let sprites = promiseG[key];
-          d.style = `width:16rem;height:16rem;background-image: url('${sprites}');background-repeat:no-repeat;background-position:center;background-size:75%`;
+          d.style = `width:16rem;height:16rem;background-image: url('${sprites}');background-repeat:no-repeat;background-position:center;background-size:70%`;
         } else if (key === "other") {
           for (const other in promiseG[key]) {
             for (const another in promiseG[key][other]) {
               if (promiseG[key][other][another] !== null) {
                 let othersImg = document.createElement("div");
                 let otherSprites = promiseG[key][other][another];
-                othersImg.style = `width:16rem;height:16rem;background-image: url('${otherSprites}');background-repeat:no-repeat;background-position:center;background-size:75%`;
+                othersImg.style = `width:16rem;height:16rem;background-image: url('${otherSprites}');background-repeat:no-repeat;background-position:center;background-size:70%`;
                 divImgContent1.append(othersImg);
               }
             }
@@ -445,13 +452,13 @@ btn1.addEventListener("click", () => {
       break;
     default:
       getPokemons(input.value);
-      divContent1.style = `border-radius:3px;width:100%;height:98%;display:flex;flex-direction:column;align-items:center;justify-content:center;background-color:rgba(0, 0, 0, 0.5)`;
+      divContent1.style = `border-radius:3px;width:100%;height:98%;display:flex;flex-direction:column;align-items:center;justify-content:center;background-color:rgba(81, 164, 246, 0.5)`;
       
-      divContent3.style = `width:40%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;background-color:rgba(81, 164, 246,0.5); border-radius:3px;`;
-      div2.style = `border-radius:3px;width:100%;display:flex; flex-direction:row;align-items:center;height:auto;background-color:rgba(231,207,106,0.8)`;
-      div3.style = `border-radius:3px;width:100%;display:flex;flex-direction:column;justify-content:start;background-color:rgba(231,207,106,0.8);height:110px`;
-      div4.style = `border-radius:3px;width:100%;height:150px;display:flex;flex-direction:column;background-color:rgba(231,207,106,0.8)`;
-      div5.style = `border-radius:3px;width:100%;height:110px;display:flex;flex-direction:row;align-items:center;background-color:rgba(231,207,106,0.8)`;
+      divContent3.style = `width:40%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:space-around;border:solid 3px black; border-radius:3px;background-image:url('img/3.jpg');opacity:0.7;background-repeat:no-repeat;background-position:bottom;background-size:cover;`;//background-color:rgba(0, 0, 0,0.5);
+      div2.style = `border-radius:3px;border:solid 3px rgba(231,207,106);width:100%;display:flex; flex-direction:row;align-items:center;height:auto;background-color:rgba(231,207,106,0.8)`;
+      div3.style = `border-radius:3px;border:solid 3px rgba(231,207,106);width:100%;display:flex;flex-direction:column;justify-content:start;background-color:rgba(231,207,106,0.8);height:110px`;
+      div4.style = `border-radius:3px;border:solid 3px rgba(231,207,106);width:100%;height:150px;display:flex;flex-direction:column;background-color:rgba(231,207,106,0.8)`;
+      div5.style = `gap:2%;border-radius:3px;border:solid 3px rgba(231,207,106);width:100%;height:110px;display:flex;flex-direction:row;align-items:center;background-color:rgba(231,207,106,0.8)`;
       break;
   }
 });

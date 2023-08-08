@@ -36,7 +36,7 @@ blockquote:before, blockquote:after,
 q:before, q:after {
 content: '';
 content: none;
-
+background-position-y: top;
 }
 @font-face {
     font-family: 'pokemon';
