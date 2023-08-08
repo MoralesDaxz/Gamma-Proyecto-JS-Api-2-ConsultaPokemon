@@ -36,10 +36,14 @@ blockquote:before, blockquote:after,
 q:before, q:after {
 content: '';
 content: none;
+
 }
-table {
-border-collapse: collapse;
-border-spacing: 0;
-flex-wrap: wrap-reverse;
-flex-direction:column-reverse;
-}
+@font-face {
+    font-family: 'pokemon';
+    src: url('./fonts/Pokemon\ Solid.ttf') format('ttf'),
+         /* //url('fonts/Pokemon\ Hollow.ttf') format('ttf'); */
+    /* Otros atributos de la fuente, como font-weight y font-style, si es necesario */;
+    color:rgba(0, 0, 0, 0.5)
+    m
+  }
+ 
